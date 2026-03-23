@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SurvayServiceApplication",
+            "request": "launch",
+            "mainClass": "com.girija.survay_service.SurvayServiceApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "UserLoginApplication",
+            "request": "launch",
+            "mainClass": "com.girija.user_login.UserLoginApplication",
+            "projectName": "user-login",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=62340 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=user-login"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AdminPanelApplication<admin-panel>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.girija.adminpanel.AdminPanelApplication",
+            "projectName": "admin-panel",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53400 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=admin-panel"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SurvayServiceApplication<survay-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.girija.survay_service.SurvayServiceApplication",
+            "projectName": "survay-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
